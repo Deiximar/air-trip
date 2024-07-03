@@ -1,0 +1,23 @@
+@import "./custom.scss";
+
+.nav {
+  background-color: $primary;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 40px;
+  font-weight: 300;
+  color: $primary;
+  text-decoration: none;
+}
+
+.logo span {
+  color: $secondary;
+  font-weight: 900;
+}
