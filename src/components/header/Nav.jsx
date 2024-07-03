@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 import "../../sass/header.scss";
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg d-flex nav bg-light-green">
+    <nav className="navbar navbar-expand-lg d-flex nav bg-light-green px-5">
       <div className="container-fluid">
-        <NavLink to="/" className="logo">
+        <a className="logo fs-2" href="#">
           <span>AIR</span>TRIP
         </NavLink>
 
