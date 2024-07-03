@@ -1,9 +1,9 @@
 import "../../sass/header.scss";
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg d-flex nav bg-light-green">
+    <nav className="navbar navbar-expand-lg d-flex nav bg-light-green px-5">
       <div className="container-fluid">
-        <a className="logo" href="#">
+        <a className="logo fs-2" href="#">
           <span>AIR</span>TRIP
         </a>
 
