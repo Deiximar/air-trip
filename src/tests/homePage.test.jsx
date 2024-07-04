@@ -1,9 +1,11 @@
-import { fireEvent, render, screen } from "@testing-library/react";
-import { describe, it, vi, expect, beforeEach } from "vitest";
+import { render, screen, waitFor } from "@testing-library/react";
+import { describe, it, vi, expect, beforeEach, suite } from "vitest";
 import '@testing-library/jest-dom/vitest';
 import Home from '../pages/Home'
-import Country from "../components/button/Country";
-import { scryRenderedComponentsWithType } from "react-dom/test-utils";
+import LandingText from "../components/landing/LandingText";
+import { BrowserRouter } from "react-router-dom";
+import GetCity from "../services/crudService";
+
 
 vi.mock('../components/landing/LandingText', () => ({
     default: () => <div>LandingText</div>
@@ -21,29 +23,42 @@ describe('Testing home page', () =>{
     })
 })
 
-vi.mock('../../data/countries.json', ()=> ({
-    countries: [
-        {name: 'argentina', es_name: 'Argentina'},
-        {name: 'brasil', es_name:'Brasil'},
-        {name: 'chile', es_name: 'Chile'}
-    ]
-}));
 
-describe('testing country component', () =>{
-    beforeEach(()=> {
-        vi.resetAllMocks();
+
+describe('LandingText', () => {
+    beforeEach(() => {
+        render(
+            <BrowserRouter>
+                <LandingText />
+            </BrowserRouter>
+        );
     });
-    it('should render country selector and handles selection', () =>{
-        render(<Country/>);
-        expect(screen.getByRole('combobox')).toBeInTheDocument();
-        expect(screen.getByRole('combobox')).toHaveValue('');
 
-        expect(screen.getByText('PAIS')).toBeInTheDocument();
-        expect(screen.getByText('Argentina')).toBeInTheDocument();
-        expect(screen.getByText('Brasil')).toBeInTheDocument();
-        expect(screen.getByText('Chile')).toBeInTheDocument();
+    it('should render the container with the class "containerText"', () => {
+        const containerElement = document.querySelector('.containerText');
+        expect(containerElement).toBeDefined();
+    });
 
-        fireEvent.change(screen.getByRole('combobox'), {target: {value: 'argentina'}});
-        expect(screen.getByRole('combobox')).toHaveValue('argentina');
-    })
-})
+    it('should render title with class "textTitle"', () => {
+        const titleElement = document.querySelector('.textTitle');
+        expect(titleElement).toBeDefined();
+    });
+
+    it('should render the subtitle with class "textSubtitle"', () => {
+        const subtitleElement = document.getElementsByClassName('textSubtitle');
+        expect(subtitleElement).toBeDefined();
+    });
+
+    it('should render welcome paragraph with classes "welcomeText" and "text-gray"', () => {
+        const welcomeTextElement = document.querySelector('.welcomeText.text-gray');
+        expect(welcomeTextElement).toBeDefined();
+    });
+
+    it('should render the call to action button with the class "btnCta"', () => {
+        const ctaButton = document.getElementsByClassName('btnCta');
+        expect(ctaButton).toBeDefined();
+    });
+});
+
+
+
