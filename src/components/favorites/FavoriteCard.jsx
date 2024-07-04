@@ -1,7 +1,7 @@
 import { FaWind } from "react-icons/fa";
 import { FaTrashAlt } from "react-icons/fa";
 
-const FavoriteCard = () => {
+const FavoriteCard = ({ editActive, onDeleteClick }) => {
   return (
     <li className="item-favorite">
       <div className="favorite-card">
@@ -16,7 +16,11 @@ const FavoriteCard = () => {
           </div>
         </div>
       </div>
-      <FaTrashAlt className="trash-icon" />
+      {editActive ? (
+        <FaTrashAlt className="trash-icon" onClick={onDeleteClick} />
+      ) : (
+        ""
+      )}
     </li>
   );
 };
