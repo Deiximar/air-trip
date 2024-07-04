@@ -1,9 +1,11 @@
+import City from "../components/button/City.jsx";
 import Country from "../components/button/Country.jsx";
 import Favorites from "../components/favorites/Favorites.jsx";
 
 const Dashboard = () => {
   return <div>
     <Country />
+    <City />
     <Favorites/>
   </div>;
 };
