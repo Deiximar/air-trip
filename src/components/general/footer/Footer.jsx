@@ -20,8 +20,7 @@ const Footer = () => {
       <ul className="profile-links">{Profiles}</ul>
       <div>
         <p className="text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+          Hackathon F6 - Edición 6 - Julio 2024
         </p>
       </div>
     </footer>
