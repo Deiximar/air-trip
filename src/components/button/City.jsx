@@ -1,6 +1,5 @@
 import { useState } from "react";
 import citiesData from "../../data/cities.json";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 function City() {
   const [selectedCity, setSelectedCity] = useState('')

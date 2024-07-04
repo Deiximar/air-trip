@@ -39,5 +39,15 @@ module.exports = {
         'no-unused-vars': ['error', { varsIgnorePattern: 'React' }],
       },
     }
+  ],
+  overrides: [
+    {
+      files: ['src/components/map/Map.jsx'], 
+      files: ['src/test/Map.test.jsx'], 
+      rules: {
+        'react/react-in-jsx-scope': 'off',
+        'no-unused-vars': ['error', { varsIgnorePattern: 'React' }],
+      },
+    }
   ]
 }
