@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Form from 'react-bootstrap/Form';
 import citiesData from '../../data/cities.json'; 
 
 function City() {
@@ -10,14 +9,14 @@ function City() {
   };
 
   return (
-    <Form.Select aria-label="Selecciona una ciudad" value={selectedCity} onChange={handleChange}>
+    <select aria-label="Selecciona una ciudad" value={selectedCity} onChange={handleChange}>
       <option value="">CIUDAD</option>
       {Array.isArray(citiesData.cities) && citiesData.cities.map((city, index) => (
         <option key={index} value={city.name}>
-          {city.name} {city.name}
+          {city.name}
         </option>
       ))}
-    </Form.Select>
+    </select>
   );
 }
 
