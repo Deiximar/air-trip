@@ -20,34 +20,42 @@ body {
     text-shadow: 5px 5px 5px #00000042;
     font-size: 40px;
     color: $light-green;
+    font-weight: bolder;
 }
 
 .textSubtitle {
     text-shadow: 5px 5px 5px #00000042;
     width: 28rem;
     font-size: 30px;
-    margin-top: -1.5rem;
     color: $secondary;
+    font-weight: bold;
+    margin-top: -20px
 }
 
 .welcomeText {
     margin-top: 2rem;
+    color: $gray;
 }
 
 
 img {
     width: 40rem;
+    margin-right: 10em;
 }
 
 .btnCta {
     margin-top: 2rem;
-    width: 15em;
-    height: 4em;
+    width: 18em;
+    height: 5em;
     display: flex;
+    color: $secondary;
     font-size: 12px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 5px 5px 5px #00000046;
+    border: solid $secondary;
+    border-radius: 10px;
+    background-color: $light-green;
 }

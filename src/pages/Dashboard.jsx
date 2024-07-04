@@ -1,8 +1,10 @@
-import Country from "../components/button/Country";
+import Country from "../components/button/Country.jsx";
 
 const Dashboard = () => {
-  return <div>Soy Dashboard</div>;
-  <Country />
+  return <div>
+    <Country />
+  </div>;
+  
 };
 
 export default Dashboard;
