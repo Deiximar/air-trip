@@ -15,7 +15,7 @@
   display: flex;
   gap: 20px;
   padding: 2rem;
-
+  align-items: center;
 }
 
 select {
@@ -64,3 +64,19 @@ select {
   box-shadow: 5px 5px 5px #00000028
 }
 
+.add-favorite-btn {
+  width: 125px;
+  background-color: $light;
+  color: $secondary;
+  border-radius: 30px;
+  border: 1px solid $secondary;
+  margin: 0 auto;
+  height: 25px;
+}
+
+.add-favorite-btn:hover {
+  background-color: $secondary;
+  color: $light;
+  border: 1px solid transparent;
+  cursor: pointer;
+}

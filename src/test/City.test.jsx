@@ -22,8 +22,8 @@ describe('City Component', () => {
     render(<City />)
 
     const selectElement = screen.getByRole('combobox');
-    fireEvent.change(selectElement, { target: { value: 'Agdam' } })
+    fireEvent.change(selectElement, { target: { value: 'shanghai' } })
 
-    expect(selectElement.value).toBe('Agdam')
+    expect(selectElement.value).toBe('shanghai')
   })
 })

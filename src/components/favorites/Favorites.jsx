@@ -1,7 +1,11 @@
 import FavoriteCard from "./FavoriteCard";
 import { FiEdit2 } from "react-icons/fi";
+import { IoClose } from "react-icons/io5";
 import "../../sass/favorite.scss";
 import { useEffect } from "react";
+import { useState } from "react";
+import { useContext } from "react";
+import { FavoriteContext } from "../../context/FavoriteContext";
 
 const airQuality = () => {
   switch (aqi) {
@@ -26,19 +30,37 @@ const airQuality = () => {
   }
 };
 
-const handleOnClick = () => {};
-
 const Favorites = () => {
+  const { favorites, setFavorites } = useContext(FavoriteContext);
+  const [editActive, setEditActive] = useState(false);
+
+  const handleOnClick = () => {
+    setEditActive(!editActive);
+  };
+
+  const handleDeleteClick = (favToDelete) => {
+    const newFavorites = favorites.filter((fav) => fav != favToDelete);
+
+    setFavorites(newFavorites);
+  };
+
   return (
     <div className="container">
       <ul className="favorite-container">
-        <FavoriteCard />
-        <FavoriteCard />
-        <FavoriteCard />
-        <FavoriteCard />
+        {favorites.map((favorite, index) => (
+          <FavoriteCard
+            key={index}
+            editActive={editActive}
+            onDeleteClick={() => handleDeleteClick(favorite)}
+          />
+        ))}
       </ul>
-      <button className="edit-button" onClick={() => handleOnClick}>
-        <FiEdit2 className="edit-icon" />
+      <button className="edit-button" onClick={() => handleOnClick()}>
+        {editActive ? (
+          <IoClose className="close-icon" />
+        ) : (
+          <FiEdit2 className="edit-icon" />
+        )}
       </button>
     </div>
   );

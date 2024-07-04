@@ -3,15 +3,25 @@ import Country from "../components/button/Country.jsx";
 import ImputDashboard from "../components/dashboard/imputDashboard.jsx";
 import Favorites from "../components/favorites/Favorites.jsx";
 import CardTop10Country from "../components/sidebar/CardTop10.jsx";
+import FavButton from "../components/button/FavButton.jsx";
 import "../sass/dashboard.scss";
+import { useContext } from "react";
+import { FavoriteContext } from "../context/FavoriteContext.jsx";
 
 const Dashboard = () => {
+  const { favorites, setFavorites } = useContext(FavoriteContext);
+
+  const handleOnClick = () => {
+    setFavorites([...favorites, {}]);
+  };
+
   return (
     <div className="dashboard-container">
-      <div className="left-side">
+        <div className="left-side">{favorites.length ? <Favorites /> : ""}
         <Favorites />
         <CardTop10Country/>
       </div>
+
 
       <div className="right-side">
         <div className="dashboard-header">
@@ -21,6 +31,7 @@ const Dashboard = () => {
         </div>
         <div className="dashboardData">
           <div className="dataCard">
+          <FavButton onClick={handleOnClick} />
         </div>
       </div>
     </div>
