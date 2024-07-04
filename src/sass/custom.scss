@@ -14,6 +14,7 @@ $custom-colors: (
   "light-blue": $light-blue,
   "light-green": $light-green,
   "light": $light,
+  "gray": $gray,
 ) !default;
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

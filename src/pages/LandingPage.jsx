@@ -1,6 +1,7 @@
-import LandingText from "../components/landing/LandingText";
+import LandingText from "../components/landing/LandingText"
+import "../sass/landing.scss"
 
-const Home = () => {
+const LandingPage = () => {
     return (
         <div className="landingPageContainer">
             < LandingText/>
@@ -12,4 +13,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default LandingPage

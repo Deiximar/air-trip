@@ -3,3 +3,46 @@
 body {
     background: $primary ;
 }
+
+.landingPageContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerText {
+    padding: 20rem;
+}
+
+.textTitle {
+    text-shadow: 5px 5px 5px #00000042;
+}
+
+.textSubtitle {
+    text-shadow: 5px 5px 5px #00000042;
+    width: 28rem;
+}
+
+.welcomeText {
+    margin-top: 2rem;
+}
+
+
+img {
+    width: 40rem;
+}
+
+.btnCta {
+    margin-top: 2rem;
+    width: 15em;
+    height: 4em;
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px #00000046;
+}
