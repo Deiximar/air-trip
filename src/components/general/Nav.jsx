@@ -7,7 +7,6 @@ const Nav = () => {
         <NavLink to="/" className="logo">
           <span>AIR</span>TRIP
         </NavLink>
-
         <NavLink
           to="/dashboard"
           className={({ isActive }) => {
@@ -20,5 +19,4 @@ const Nav = () => {
     </nav>
   );
 };
-
 export default Nav;
