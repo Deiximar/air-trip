@@ -1,22 +1,37 @@
-import { token } from "../../utils/token";
-import useApi from "../../services/useApi";
-import { useState } from "react";
-
 import FavoriteCard from "./FavoriteCard";
+import "../../sass/favorite.scss";
 
+const airQuality = () => {
+  switch (aqi) {
+    case 0 - 50:
+      return "Good";
+      break;
+    case 51 - 100:
+      return "Moderate";
+      break;
+    case 101 - 150:
+      return "Unhealthy for Sensitive Groups";
+      break;
+    case 151 - 200:
+      return "Unhealthy";
+      break;
+    case 201 - 300:
+      return "Very Unhealthy";
+      break;
+    default:
+      return "Hazardous";
+      break;
+  }
+};
 const Favorites = () => {
-  const [airQuality, setAirQuality] = useState();
-  const favoriteCities = ["shangai", "madrid"]; //consulta base de datos
-
-  favoriteCities.map((city) => {
-    const data = useApi(`http://api.waqi.info/feed/${city}/?token=${token}`);
-    console.log("hola");
-    console.log(data);
-    if (!data) {
-      return <p>loanding..</p>;
-    }
-    return <FavoriteCard data={data} />;
-  });
+  return (
+    <ul className="favorite-container">
+      <FavoriteCard />
+      <FavoriteCard />
+      <FavoriteCard />
+      <FavoriteCard />
+    </ul>
+  );
 };
 
 export default Favorites;

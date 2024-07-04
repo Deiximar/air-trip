@@ -1,9 +1,13 @@
-const FavoriteCard = ({ data }) => {
+const FavoriteCard = () => {
   return (
-    <li>
-      <h6>Air Quality in </h6>
-      <div>
-        <small></small>
+    <li className="favorite-card">
+      <h6 className="title">Air Quality in </h6>
+      <div className="quality-info-container">
+        <div></div>
+        <div className="quality-info">
+          <small>100</small>
+          <small>Good</small>
+        </div>
       </div>
     </li>
   );
