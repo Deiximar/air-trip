@@ -22,6 +22,18 @@ module.exports = {
     {
       files: ['src/components/button/City.jsx'], 
       files: ['src/test/City.test.jsx'], 
+      files: ['src/components/button/Country.jsx'], 
+      files: ['src/test/Country.test.jsx'], 
+      rules: {
+        'react/react-in-jsx-scope': 'off',
+        'no-unused-vars': ['error', { varsIgnorePattern: 'React' }],
+      },
+    }
+  ],
+  overrides: [
+    {
+      files: ['src/components/button/Country.jsx'], 
+      files: ['src/test/Country.test.jsx'], 
       rules: {
         'react/react-in-jsx-scope': 'off',
         'no-unused-vars': ['error', { varsIgnorePattern: 'React' }],

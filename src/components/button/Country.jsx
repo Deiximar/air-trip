@@ -9,14 +9,14 @@ function Country() {
   };
 
   return (
-    <div aria-label="Selecciona un país" value={selectedCountry} onChange={handleChange}>
+    <select aria-label="Selecciona un país" value={selectedCountry} onChange={handleChange} data-testid="country-select">
       <option value="">PAIS</option>
       {Array.isArray(countriesData.countries) && countriesData.countries.map((country, index) => (
         <option key={index} value={country.name}>
           {country.es_name}
         </option>
       ))}
-    </div>
+    </select>
   );
 }
 

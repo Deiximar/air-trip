@@ -7,24 +7,24 @@ import { describe, expect, it } from 'vitest';
 
 describe('City Component', () => {
   it('renders City component and checks if options are loaded', () => {
-    render(<City />);
+    render(<City />)
     
-    const selectElement = screen.getByRole('combobox');
-    expect(selectElement).toBeInTheDocument();
+    const selectElement = screen.getByRole('combobox')
+    expect(selectElement).toBeInTheDocument()
     
-    const options = screen.getAllByRole('option');
-    expect(options).toHaveLength(citiesData.cities.length + 1);
+    const options = screen.getAllByRole('option')
+    expect(options).toHaveLength(citiesData.cities.length + 1)
     citiesData.cities.forEach((city) => {
-      expect(screen.getByText(city.name)).toBeInTheDocument();
-    });
-  });
+      expect(screen.getByText(city.name)).toBeInTheDocument()
+    })
+  })
 
   it('selects a city and checks the state', () => {
-    render(<City />);
+    render(<City />)
     
     const selectElement = screen.getByRole('combobox');
-    fireEvent.change(selectElement, { target: { value: 'Agdam' } });
+    fireEvent.change(selectElement, { target: { value: 'Agdam' } })
     
-    expect(selectElement.value).toBe('Agdam');
-  });
-});
+    expect(selectElement.value).toBe('Agdam')
+  })
+})

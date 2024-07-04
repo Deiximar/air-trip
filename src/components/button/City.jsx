@@ -2,10 +2,10 @@ import { useState } from 'react';
 import citiesData from '../../data/cities.json'; 
 
 function City() {
-  const [selectedCity, setSelectedCity] = useState('');
+  const [selectedCity, setSelectedCity] = useState('')
 
   const handleChange = (event) => {
-    setSelectedCity(event.target.value);
+    setSelectedCity(event.target.value)
   };
 
   return (
@@ -17,7 +17,7 @@ function City() {
         </option>
       ))}
     </select>
-  );
+  )
 }
 
-export default City;
+export default City
