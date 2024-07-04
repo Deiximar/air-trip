@@ -1,25 +1,10 @@
-@import "../../node_modules/bootstrap/scss/functions";
 $primary: #5d737e;
 $secondary: #64b6ac;
 $light-blue: #c0fdfb;
 $light-green: #daffef;
 $light: #fcfffd;
 $gray: #b6b6b6;
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/variables-dark";
 
-$custom-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "light-blue": $light-blue,
-  "light-green": $light-green,
-  "light": $light,
-  "gray": $gray,
-) !default;
-
-$theme-colors: map-merge($theme-colors, $custom-colors);
-
-@import "../../node_modules/bootstrap/scss/bootstrap";
 
 body {
   margin: 0;
