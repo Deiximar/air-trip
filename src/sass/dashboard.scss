@@ -3,22 +3,35 @@
 .dashboard-container {
   display: flex;
 }
-
-.country-selecter {
-  height: 30px;
-  width: 150px;
-  border-radius: 6px;
-  border: 1.5px solid $secondary;
-  display: inline-block;
-  line-height: 1.5em;
-  padding: 5px;
+.right-side {
+  padding: 10px;
+}
+.dashboard-header {
+  display: flex;
+  gap: 20px;
+}
+select {
+  appearance: none;
+  background-color: transparent;
   color: $secondary;
+  border: none;
+  margin: 0;
+  width: 100%;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
 
-  /* reset */
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.selecter {
+  display: flex;
+  width: 200px;
+  border: 1.5px solid $secondary;
+  color: $secondary;
+  border-radius: 7px;
+  padding: 7px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: $light;
+  height: 40px;
 }

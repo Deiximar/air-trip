@@ -6,11 +6,16 @@ import "../sass/dashboard.scss";
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      <div>
+      <div className="left-side">
         <Favorites />
       </div>
-      <Country />
-      <City />
+
+      <div className="right-side">
+        <div className="dashboard-header">
+          <Country />
+          <City />
+        </div>
+      </div>
     </div>
   );
 };
