@@ -1,7 +1,7 @@
 @import "./custom.scss";
 
 body {
-    background: $primary ;
+    background: $gradient-gray ;
 }
 
 .landingPageContainer {
@@ -10,10 +10,11 @@ body {
     padding: 5rem;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .containerText {
-    padding: 10rem;
+    padding: 8rem;
 }
 
 .textTitle {
@@ -29,7 +30,6 @@ body {
     font-size: 30px;
     color: $secondary;
     font-weight: bold;
-    margin-top: -20px
 }
 
 .welcomeText {
