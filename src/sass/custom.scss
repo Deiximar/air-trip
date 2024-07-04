@@ -1,0 +1,21 @@
+$primary: #5d737e;
+$secondary: #64b6ac;
+$light-blue: #c0fdfb;
+$light-green: #daffef;
+$light: #fcfffd;
+$gray: #c1c1c1;
+$blue: #b0dbd5;
+$dark-gray: #5d737e;
+
+$gradient-gray: linear-gradient(to top, #b6b6b6 0%,  #5d737e 50%,  #5d737e 100%);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}

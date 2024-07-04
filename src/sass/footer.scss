@@ -1,0 +1,38 @@
+@import "./custom.scss";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: $secondary;
+  padding: 8px 50px;
+  align-items: center;
+  height: 35px;
+  bottom: 0;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+}
+.profile-links {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+.circle-button,
+.circle-button div {
+  width: 20px;
+  height: 20px;
+  background-color: $light-green;
+  border-radius: 50%;
+}
+
+.tooltip {
+  color: black;
+  background-color: $primary;
+}
+
+.text {
+  color: $light;
+}

@@ -1,0 +1,64 @@
+@import "./custom.scss";
+
+.nav {
+  background-color: $light-green;
+  padding: 5px 50px;
+  font-weight: bolder;
+  align-content: center;
+  height: 60px;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  font-size: 40px;
+  font-weight: 300;
+  color: $primary;
+  text-decoration: none;
+}
+
+.logo span {
+  color: $secondary;
+  font-weight: 900;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.dashboard-button {
+  background-color: $light;
+  color: $secondary;
+  height: 16px;
+  align-content: center;
+  padding: 10px;
+  border: 1px solid $secondary;
+  border-radius: 20px;
+  height: 40px;
+}
+
+.dashboard-active {
+  background-color: $secondary;
+  color: $light;
+  height: 16px;
+  align-content: center;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  height: 40px;
+  cursor: not-allowed;
+}
+
+.dashboard-button:hover {
+  background-color: $secondary;
+  color: $light;
+  border: 1px solid transparent;
+}
+
+a:link {
+  text-decoration: none;
+}

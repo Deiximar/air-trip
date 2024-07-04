@@ -1,0 +1,31 @@
+{
+    "cities": [
+      { "name": "shanghai" },
+      { "name": "sevilla" },
+      { "name": "cordoba" },
+      { "name": "merida" },
+      { "name": "madrid" },
+      { "name": "cuenca" },
+      { "name": "cadiz" },
+      { "name": "vigo" },
+      { "name": "teruel" },
+      { "name": "malaga" },
+      { "name": "paris" },
+      { "name": "london" },
+      { "name": "new york" },
+      { "name": "los angeles" },
+      { "name": "tokyo" },
+      { "name": "beijing" },
+      { "name": "hong kong" },
+      { "name": "sydney" },
+      { "name": "melbourne" },
+      { "name": "singapore" },
+      { "name": "berlin" },
+      { "name": "moscow" },
+      { "name": "rome" },
+      { "name": "mumbai" },
+      { "name": "delhi" },
+      { "name": "bangalore" },
+      { "name": "kolkata" }
+    ]
+  }
