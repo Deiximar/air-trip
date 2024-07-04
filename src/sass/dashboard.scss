@@ -3,13 +3,21 @@
 .dashboard-container {
   display: flex;
 }
+
 .right-side {
   padding: 10px;
+  background-color: $gray;
+  width: 100vw;
+  height: 100vh;
 }
+
 .dashboard-header {
   display: flex;
   gap: 20px;
+  padding: 2rem;
+
 }
+
 select {
   appearance: none;
   background-color: transparent;
@@ -17,21 +25,42 @@ select {
   border: none;
   margin: 0;
   width: 100%;
-  font-size: inherit;
   cursor: inherit;
   line-height: inherit;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.selecter {
+.selecter, .searchContainer {
   display: flex;
+  align-items: center;
   width: 200px;
-  border: 1.5px solid $secondary;
+  border: 2px solid $secondary;
   color: $secondary;
   border-radius: 7px;
   padding: 7px 15px;
-  font-size: 20px;
   cursor: pointer;
   line-height: 1.1;
   background-color: $light;
   height: 40px;
 }
+
+.imputSearch{
+  border: none;
+}
+
+.dashboardData{
+  display: flex;
+  flex-direction: column;
+}
+
+.dataCard{
+  width: 25rem;
+  height: 30rem;
+  margin-left: 3rem;
+  background-color: #FCFFFD;
+  border: solid $secondary;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #00000028
+}
+
