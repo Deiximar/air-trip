@@ -9,6 +9,7 @@
 .dashboard-header {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 select {
   appearance: none;
@@ -34,4 +35,21 @@ select {
   line-height: 1.1;
   background-color: $light;
   height: 40px;
+}
+
+.add-favorite-btn {
+  width: 125px;
+  background-color: $light;
+  color: $secondary;
+  border-radius: 30px;
+  border: 1px solid $secondary;
+  margin: 0 auto;
+  height: 25px;
+}
+
+.add-favorite-btn:hover {
+  background-color: $secondary;
+  color: $light;
+  border: 1px solid transparent;
+  cursor: pointer;
 }

@@ -8,6 +8,7 @@ const githubProfiles = [
   { name: "Jose profile", url: "https://github.com/jmatisam" },
   { name: "Bego profile", url: "https://github.com/begoblanco" },
   { name: "Julio profile", url: "https://github.com/Lapiceros" },
+  { name: "Raunier profile", url: "https://github.com/Raunier24" },
 ];
 
 const Profiles = githubProfiles.map((profile) => {
@@ -19,9 +20,7 @@ const Footer = () => {
     <footer className="footer">
       <ul className="profile-links">{Profiles}</ul>
       <div>
-        <p className="text">
-          Hackathon F6 - Edición 6 - Julio 2024
-        </p>
+        <p className="text">Hackathon F6 - Edición 6 - Julio 2024</p>
       </div>
     </footer>
   );
