@@ -18,4 +18,14 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  overrides: [
+    {
+      files: ['src/components/button/City.jsx'], 
+      files: ['src/test/City.test.jsx'], 
+      rules: {
+        'react/react-in-jsx-scope': 'off',
+        'no-unused-vars': ['error', { varsIgnorePattern: 'React' }],
+      },
+    }
+  ]
 }

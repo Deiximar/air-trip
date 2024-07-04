@@ -1,3 +1,4 @@
+import City from "../components/button/City.jsx";
 import Country from "../components/button/Country.jsx";
 import Favorites from "../components/favorites/Favorites.jsx";
 import "../sass/dashboard.scss";
@@ -9,6 +10,7 @@ const Dashboard = () => {
         <Favorites />
       </div>
       <Country />
+      <City />
     </div>
   );
 };
