@@ -10,21 +10,16 @@ function Country() {
   };
 
   return (
-    <div className="selecter">
-      <select
-        aria-label="Selecciona un país"
-        value={selectedCountry}
-        onChange={handleChange}
-      >
-        <option value="">País</option>
-        {Array.isArray(countriesData.countries) &&
-          countriesData.countries.map((country, index) => (
-            <option key={index} value={country.name}>
-              {country.es_name}
-            </option>
-          ))}
-      </select>
-      <IoIosArrowDown className="arrow-down-icon" />
+<div className="selecter">
+    <select aria-label="Selecciona un país" value={selectedCountry} onChange={handleChange} data-testid="country-select">
+      <option value="">PAIS</option>
+      {Array.isArray(countriesData.countries) && countriesData.countries.map((country, index) => (
+        <option key={index} value={country.name}>
+          {country.es_name}
+        </option>
+      ))}
+    </select>
+    <IoIosArrowDown className="arrow-down-icon" />
     </div>
   );
 }
