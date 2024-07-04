@@ -1,14 +1,16 @@
 @import "./custom.scss";
 
 .nav {
-  background-color: $primary;
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  background-color: $light-green;
+  padding: 5px 50px;
   font-weight: bolder;
+  align-content: center;
+  height: 60px;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo {
   font-size: 40px;
@@ -24,4 +26,35 @@
 
 .btn:hover {
   transform: scale(1.1);
+}
+
+.dashboard-button {
+  background-color: $light;
+  color: $secondary;
+  height: 16px;
+  align-content: center;
+  padding: 10px;
+  border: 1px solid $secondary;
+  border-radius: 20px;
+}
+
+.dashboard-active {
+  background-color: $secondary;
+  color: $light;
+  height: 16px;
+  align-content: center;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  cursor: not-allowed;
+}
+
+.dashboard-button:hover {
+  background-color: $secondary;
+  color: $light;
+  border: 1px solid transparent;
+}
+
+a:link {
+  text-decoration: none;
 }
