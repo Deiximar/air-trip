@@ -13,16 +13,21 @@ body {
 }
 
 .containerText {
-    padding: 20rem;
+    padding: 10rem;
 }
 
 .textTitle {
     text-shadow: 5px 5px 5px #00000042;
+    font-size: 40px;
+    color: $light-green;
 }
 
 .textSubtitle {
     text-shadow: 5px 5px 5px #00000042;
     width: 28rem;
+    font-size: 30px;
+    margin-top: -1.5rem;
+    color: $secondary;
 }
 
 .welcomeText {

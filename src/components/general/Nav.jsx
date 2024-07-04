@@ -2,19 +2,15 @@ import { NavLink } from "react-router-dom";
 import "../../sass/header.scss";
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg d-flex nav bg-light-green px-5">
-      <div className="container-fluid">
-        <NavLink to="/" className="logo fs-2" href="#">
+    <nav className="nav">
+      <div className="navbar">
+        <NavLink to="/" className="logo">
           <span>AIR</span>TRIP
         </NavLink>
-
         <NavLink
           to="/dashboard"
           className={({ isActive }) => {
-            if (isActive) {
-              return `btn btn-secondary text-light rounded-pill border-primary disabled`;
-            }
-            return `btn btn-outline-secondary text-secondary bg-light rounded-pill`;
+            return isActive ? "dashboard-active" : "dashboard-button";
           }}
         >
           GO TO DASHBOARD
@@ -23,5 +19,4 @@ const Nav = () => {
     </nav>
   );
 };
-
 export default Nav;

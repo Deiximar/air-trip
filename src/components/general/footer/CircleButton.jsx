@@ -1,4 +1,3 @@
-import { Tooltip } from "react-tooltip";
 const CircleButton = ({ profile }) => {
   return (
     <li className="circle-button">
