@@ -4,7 +4,6 @@ const Dashboard = () => {
   return <div>
     <Country />
   </div>;
-  
 };
 
 export default Dashboard;
