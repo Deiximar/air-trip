@@ -1,0 +1,24 @@
+@import "./custom.scss";
+
+.dashboard-container {
+  display: flex;
+}
+
+.country-selecter {
+  height: 30px;
+  width: 150px;
+  border-radius: 6px;
+  border: 1.5px solid $secondary;
+  display: inline-block;
+  line-height: 1.5em;
+  padding: 5px;
+  color: $secondary;
+
+  /* reset */
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

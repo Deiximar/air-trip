@@ -1,17 +1,22 @@
 import Country from "../components/button/Country.jsx";
 import Favorites from "../components/favorites/Favorites.jsx";
+import "../sass/dashboard.scss";
 
 const Dashboard = () => {
-  return <div>
-    <Country />
-    <Favorites/>
-  </div>;
+  return (
+    <div className="dashboard-container">
+      <div>
+        <Favorites />
+      </div>
+      <Country />
+    </div>
+  );
 };
 
 export default Dashboard;
 
 // import { useState, useEffect } from 'react';
-// import MapCard from '../components/map/MapCard.jsx'; 
+// import MapCard from '../components/map/MapCard.jsx';
 
 // const Dashboard = () => {
 //   // Simulated data fetching
@@ -26,7 +31,6 @@ export default Dashboard;
 //       },
 //       aqi: 42
 //     };
-
 
 //     setAqData(testData);
 //   }, []);
