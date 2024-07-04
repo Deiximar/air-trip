@@ -1,5 +1,11 @@
+import Favorites from "../components/favorites/Favorites";
+
 const Dashboard = () => {
-  return <div>Soy Dashboard</div>;
+  return (
+    <div>
+      <Favorites />
+    </div>
+  );
 };
 
 export default Dashboard;

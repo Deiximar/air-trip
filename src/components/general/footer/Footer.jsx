@@ -11,7 +11,7 @@ const githubProfiles = [
 ];
 
 const Profiles = githubProfiles.map((profile) => {
-  return <CircleButton profile={profile} />;
+  return <CircleButton profile={profile} key={profile.name} />;
 });
 
 const Footer = () => {
