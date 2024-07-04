@@ -1,5 +1,7 @@
 import FavoriteCard from "./FavoriteCard";
+import { FiEdit2 } from "react-icons/fi";
 import "../../sass/favorite.scss";
+import { useEffect } from "react";
 
 const airQuality = () => {
   switch (aqi) {
@@ -23,14 +25,22 @@ const airQuality = () => {
       break;
   }
 };
+
+const handleOnClick = () => {};
+
 const Favorites = () => {
   return (
-    <ul className="favorite-container">
-      <FavoriteCard />
-      <FavoriteCard />
-      <FavoriteCard />
-      <FavoriteCard />
-    </ul>
+    <div className="container">
+      <ul className="favorite-container">
+        <FavoriteCard />
+        <FavoriteCard />
+        <FavoriteCard />
+        <FavoriteCard />
+      </ul>
+      <button className="edit-button" onClick={() => handleOnClick}>
+        <FiEdit2 className="edit-icon" />
+      </button>
+    </div>
   );
 };
 
