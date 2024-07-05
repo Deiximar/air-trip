@@ -1,6 +1,8 @@
 import City from "../components/button/City.jsx";
 import Country from "../components/button/Country.jsx";
+import ImputDashboard from "../components/dashboard/imputDashboard.jsx";
 import Favorites from "../components/favorites/Favorites.jsx";
+import CardTop10Country from "../components/sidebar/CardTop10.jsx";
 import FavButton from "../components/button/FavButton.jsx";
 import "../sass/dashboard.scss";
 import { useContext } from "react";
@@ -15,16 +17,25 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <div className="left-side">{favorites.length ? <Favorites /> : ""}</div>
+        <div className="left-side">{favorites.length ? <Favorites /> : ""}
+        <Favorites />
+        <CardTop10Country/>
+      </div>
+
 
       <div className="right-side">
         <div className="dashboard-header">
           <Country />
           <City />
+          <ImputDashboard />
+        </div>
+        <div className="dashboardData">
+          <div className="dataCard">
           <FavButton onClick={handleOnClick} />
         </div>
       </div>
     </div>
+    </div >
   );
 };
 
