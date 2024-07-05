@@ -5,11 +5,18 @@
 }
 .right-side {
   padding: 10px;
+  width: 100%;
 }
 .dashboard-header {
   display: flex;
   gap: 20px;
   align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-body {
+  display: flex;
+  gap: 10px;
 }
 select {
   appearance: none;
@@ -43,7 +50,6 @@ select {
   color: $secondary;
   border-radius: 30px;
   border: 1px solid $secondary;
-  margin: 0 auto;
   height: 25px;
 }
 

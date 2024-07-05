@@ -1,17 +1,17 @@
-
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+import "../../sass/quality-card.scss";
 
 const AirQualityCard = ({ city, aqi, pm25, pm10, o3 }) => {
   return (
-    <div className="card">
+    <div className="card-info">
       <div className="card-header">
         <h5 className="card-title">{city}</h5>
       </div>
       <div className="card-body">
         <p>Índice de Calidad del Aire (AQI): {aqi}</p>
-        <p>Partículas PM2.5: {pm25 ? pm25 : 'No disponible'}</p>
-        <p>Partículas PM10: {pm10 ? pm10 : 'No disponible'}</p>
-        <p>Ozono O3: {o3 ? o3 : 'No disponible'}</p>
+        <p>Partículas PM2.5: {pm25 ? pm25 : "No disponible"}</p>
+        <p>Partículas PM10: {pm10 ? pm10 : "No disponible"}</p>
+        <p>Ozono O3: {o3 ? o3 : "No disponible"}</p>
       </div>
     </div>
   );
@@ -32,13 +32,13 @@ export default AirQualityCard;
 // import AirQualityCard from '../components/airqualitycard/AirQualityCard';
 
 // const Dashboard = () => {
-//   const [aqData, setAqData] = useState(null); 
+//   const [aqData, setAqData] = useState(null);
 
 //   useEffect(() => {
-    
+
 //     const fetchData = async () => {
 //       try {
-        
+
 //         const response = await fetch('https://api.example.com/air-quality-data');
 //         if (!response.ok) {
 //           throw new Error('Error al obtener los datos');
@@ -50,12 +50,12 @@ export default AirQualityCard;
 //       }
 //     };
 
-//     fetchData(); 
+//     fetchData();
 
 //     return () => {
-      
+
 //     };
-//   }, []); 
+//   }, []);
 
 //   return (
 //     <div className="container">

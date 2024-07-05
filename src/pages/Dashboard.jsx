@@ -2,9 +2,11 @@ import City from "../components/button/City.jsx";
 import Country from "../components/button/Country.jsx";
 import Favorites from "../components/favorites/Favorites.jsx";
 import FavButton from "../components/button/FavButton.jsx";
-import "../sass/dashboard.scss";
 import { useContext } from "react";
 import { FavoriteContext } from "../context/FavoriteContext.jsx";
+import AirQualityCard from "../components/airqualitycard/AirQualityCard.jsx";
+import MapCard from "../components/map/MapCard.jsx";
+import "../sass/dashboard.scss";
 
 const Dashboard = () => {
   const { favorites, setFavorites } = useContext(FavoriteContext);
@@ -22,6 +24,10 @@ const Dashboard = () => {
           <Country />
           <City />
           <FavButton onClick={handleOnClick} />
+        </div>
+        <div className="dashboard-body">
+          <AirQualityCard />
+          <MapCard />
         </div>
       </div>
     </div>
