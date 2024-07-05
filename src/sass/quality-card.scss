@@ -1,0 +1,29 @@
+@import "./custom.scss";
+
+.card-info {
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0 2px 4px $dark-gray;
+}
+
+.card-header {
+  background-color: $secondary;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-body {
+  padding: 10px;
+  background-color: $light;
+  color: $primary;
+}
+
+.card-body p {
+  margin: 5px 0;
+}

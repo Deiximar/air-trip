@@ -4,9 +4,11 @@ import ImputDashboard from "../components/dashboard/imputDashboard.jsx";
 import Favorites from "../components/favorites/Favorites.jsx";
 import CardTop10Country from "../components/sidebar/CardTop10.jsx";
 import FavButton from "../components/button/FavButton.jsx";
-import "../sass/dashboard.scss";
 import { useContext } from "react";
 import { FavoriteContext } from "../context/FavoriteContext.jsx";
+import AirQualityCard from "../components/airqualitycard/AirQualityCard.jsx";
+import MapCard from "../components/map/MapCard.jsx";
+import "../sass/dashboard.scss";
 
 const Dashboard = () => {
   const { favorites, setFavorites } = useContext(FavoriteContext);
@@ -32,6 +34,10 @@ const Dashboard = () => {
         <div className="dashboardData">
           <div className="dataCard">
           <FavButton onClick={handleOnClick} />
+        </div>
+        <div className="dashboard-body">
+          <AirQualityCard />
+          <MapCard />
         </div>
       </div>
     </div>

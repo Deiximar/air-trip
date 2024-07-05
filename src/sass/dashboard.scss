@@ -31,7 +31,8 @@ select {
   font-weight: bold;
 }
 
-.selecter, .searchContainer {
+.selecter,
+.searchContainer {
   display: flex;
   align-items: center;
   width: 200px;
@@ -45,23 +46,23 @@ select {
   height: 40px;
 }
 
-.imputSearch{
+.imputSearch {
   border: none;
 }
 
-.dashboardData{
+.dashboardData {
   display: flex;
   flex-direction: column;
 }
 
-.dataCard{
+.dataCard {
   width: 25rem;
   height: 30rem;
   margin-left: 3rem;
-  background-color: #FCFFFD;
+  background-color: #fcfffd;
   border: solid $secondary;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #00000028
+  box-shadow: 5px 5px 5px #00000028;
 }
 
 .add-favorite-btn {
@@ -70,7 +71,6 @@ select {
   color: $secondary;
   border-radius: 30px;
   border: 1px solid $secondary;
-  margin: 0 auto;
   height: 25px;
 }
 
