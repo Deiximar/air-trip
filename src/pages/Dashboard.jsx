@@ -19,29 +19,28 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-        <div className="left-side">{favorites.length ? <Favorites /> : ""}
-        <Favorites />
-        <CardTop10Country/>
+      <div className="left-side">
+        {favorites.length ? <Favorites /> : ""}
+        <CardTop10Country />
       </div>
-
 
       <div className="right-side">
         <div className="dashboard-header">
           <Country />
           <City />
           <ImputDashboard />
+          <FavButton onClick={handleOnClick} />
         </div>
         <div className="dashboardData">
           <div className="dataCard">
-          <FavButton onClick={handleOnClick} />
-        </div>
-        <div className="dashboard-body">
-          <AirQualityCard />
-          <MapCard />
+            <AirQualityCard />
+          </div>
+          <div className="dataMap">
+            <MapCard />
+          </div>
         </div>
       </div>
     </div>
-    </div >
   );
 };
 

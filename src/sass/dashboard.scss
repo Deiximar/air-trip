@@ -52,7 +52,7 @@ select {
 
 .dashboardData {
   display: flex;
-  flex-direction: column;
+  gap: 50px;
 }
 
 .dataCard {
@@ -63,6 +63,10 @@ select {
   border: solid $secondary;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #00000028;
+  flex-shrink: 0;
+}
+
+.dataMap {
 }
 
 .add-favorite-btn {
