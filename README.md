@@ -29,10 +29,9 @@ AirTrip es una aplicación web diseñada para ayudar a los usuarios a planificar
 - **Alertas Personalizadas:** Envío de alertas cuando la calidad del aire en el destino elegido no es adecuada.
 - **Perfil de Usuario:** Los usuarios pueden crear y gestionar su perfil con sus preferencias de viaje y recibir recomendaciones personalizadas.
 
-## Metodologías y planificación
+## Metodologías Ágiles
 
-- Agile
-- Jira
+Para el desarrollo de AirTrip, utilizamos metodologías ágiles, específicamente Scrum. La planificación y el seguimiento del proyecto se realizaron utilizando Jira. Puedes ver nuestro tablero de Jira [aquí](https://rebkg87.atlassian.net/jira/software/projects/AT/list)
  
 
 ## Instalación
@@ -94,34 +93,33 @@ AirTrip es una aplicación web diseñada para ayudar a los usuarios a planificar
 ├── src/
 │   ├── components/
 │   ├── config/
-│   ├── customHooks/
 │   ├── data/
 │   ├── layout/
 │   ├── pages/
 │   ├── router/
-│   ├── services/
-│   ├── styles/
-│   ├── App.js
-│   ├── index.js
+│   ├── sass/
+│   ├── test/
+│   ├── utils/
+│   ├── main.jsx
 ├── README.md
+├── index.html
 └──  package.json
 
 
 ```
-- **public/:**  Contiene archivos estáticos accesibles al público.
-    - **images/:** Contiene imágenes utilizadas en la aplicación.
+
 - **src/:** Contiene fonts utilizadas en la aplicación.
     - **assets/:** Contiene recursos estáticos como imágenes.
-    - **components/:** Componentes reutilizables organizados por categorías (footer, general, home, sidebar, tracker).
+    - **components/:** Componentes reutilizables organizados por categorías.
     - **config/:** Archivos de configuración.
-    - **customHooks/:** Hooks personalizados.
     - **data/:** Datos estáticos utilizados en la aplicación.
     - **layout/:** Componentes de layout.
     - **pages/:** Páginas de la aplicación organizadas por secciones.
     - **router/:** Configuración de rutas.
-    - **services/:** Servicios y llamadas a la API.
-    - **styles/:** Archivos de estilos.
-    - **App.js:** Componente principal de la aplicación.
+    - **sass/:** Archivos de estilos.
+    - **test/:** Test realizados para el front-end.
+    - **utils/:** Token para conectar a la api.
+    - **main.js:** Componente principal de la aplicación.
 - **index.html:** Archivo HTML principal.
 - **README.md:** Archivo de documentación del proyecto.
 - **package.json:** Archivo de configuración del proyecto y dependencias.
@@ -170,6 +168,12 @@ git push origin feature/nueva-caracteristica
 Por favor, asegúrate de seguir el [Código de Conducta de GitHub](https://docs.github.com/en/github/building-a-strong-community/code-of-conduct).
 
 ## Developers 
+
+- [Rebeca](https://github.com/rebkg87)
+- [Pablo](https://github.com/PabloA1A) Scrum Master
+- [Jose](https://github.com/jmatisam) Product Owner
+- [Bego](https://github.com/begoblanco)
+- [Julio](https://github.com/Lapiceros)
 
 
 ## Capturas de Pantalla 
