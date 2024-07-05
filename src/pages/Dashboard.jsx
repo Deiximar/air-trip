@@ -4,23 +4,42 @@ import ImputDashboard from "../components/dashboard/imputDashboard.jsx";
 import Favorites from "../components/favorites/Favorites.jsx";
 import CardTop10Country from "../components/sidebar/CardTop10.jsx";
 import FavButton from "../components/button/FavButton.jsx";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { FavoriteContext } from "../context/FavoriteContext.jsx";
 import AirQualityCard from "../components/airqualitycard/AirQualityCard.jsx";
 import MapCard from "../components/map/MapCard.jsx";
 import "../sass/dashboard.scss";
+import FavoriteCard from "../components/favorites/FavoriteCard.jsx";
 
 const Dashboard = () => {
   const { favorites, setFavorites } = useContext(FavoriteContext);
 
   const handleOnClick = () => {
     setFavorites([...favorites, {}]);
+
   };
+
+  const [aqData, setAqData] = useState(null);
+
+  useEffect(() => {
+    // Example data
+    const testData = {
+      city: {
+        name: "Test City",
+        geo: [40.7128, -74.0060]
+      },
+      aqi: 42
+    };
+
+
+    setAqData(testData);
+  }, []);
 
   return (
     <div className="dashboard-container">
       <div className="left-side">
         {favorites.length ? <Favorites /> : ""}
+        <Favorites />
         <CardTop10Country />
       </div>
 
@@ -36,7 +55,7 @@ const Dashboard = () => {
             <AirQualityCard />
           </div>
           <div className="dataMap">
-            <MapCard />
+            <MapCard data={aqData} />
           </div>
         </div>
       </div>

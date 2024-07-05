@@ -10,7 +10,6 @@ const MapCard = ({ data }) => {
 
   return (
     <div className="">
-      <div className="">Air Quality Map</div>
       <div className="">
         <div className="map-container">
           <Map data={data} />
